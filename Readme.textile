@@ -1,0 +1,25 @@
+h1. MKImageDownloader
+
+Asynchronous Image Downloader for iOS using blocks for quick and easy access to remote images. The Image Downloader also involves a cache which **hence the name** caches the downloaded images. The cache is dumped every 7 days, but you can easily modify this as such in the attached Xcode Project
+
+h2. Usage
+
+<pre>
+#import "MKImageDownloader.h.h"
+
+...
+
+
+// To download a remote image / retrieve it from the cache (automatically choses the correct)
+
+
+// To load a saved image from the "Documents" directory
+[TBImageDownloader downloadImageAtURL:[NSURL URLWithString:@"http://www.iphone-prix.com/wp-content/uploads/2012/05/iphone-5-apple.png"] completion:^(UIImage * image) {
+        
+    //set the image to an image view
+    [someImageView setImage:image];
+                
+}];
+
+
+</pre>
