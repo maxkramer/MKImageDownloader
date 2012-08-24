@@ -10,7 +10,7 @@ h2. Usage
 ...
 
 // To download a remote image / retrieve it from the cache (automatically choses the correct)
-[TBImageDownloader downloadImageAtURL:[NSURL URLWithString:@"http://www.iphone-prix.com/wp-content/uploads/2012/05/iphone-5-apple.png"] completion:^(UIImage * image) {
+[MKImageDownloader downloadImageAtURL:[NSURL URLWithString:@"http://www.iphone-prix.com/wp-content/uploads/2012/05/iphone-5-apple.png"] completion:^(UIImage * image) {
         
     //set the image to an image view
     [someImageView setImage:image];
